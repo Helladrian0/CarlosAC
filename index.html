@@ -3,35 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Adrián Aquino Castillo</title>
+    <meta name="description" content="Portafolio profesional de Carlos Adrián Aquino Castillo - Desarrollador Web">
+    <title>Carlos Adrián Aquino Castillo | Desarrollador Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Carlos Adrián Aquino Castillo</h1>
-        <p>Desarrollador Web</p>
-    </header>
-    <main>
-        <section id="about">
-            <h2>Acerca de mí</h2>
-            <p>Soy un apasionado del desarrollo web con experiencia en HTML, CSS y JavaScript.</p>
-        </section>
-        <section id="projects">
-            <h2>Mis Proyectos</h2>
-            <ul>
-                <li><a href="#">Problema sencillo.</a></li>
-                <li><a href="#">Planificar el desarrollo.</a></li>
-                <li><a href="#">Integrar herramientas de IA.</a></li>
-                <li><a href="#">Principios de código.</a></li>
-                <li><a href="#">Seguir buenas prácticas.</a></li>
-                <li><a href="#">Aplicación funcional.</a></li>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Carlos Aquino</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Carlos Adrián Aquino Castillo</h1>
+            <h2>Desarrollador Web</h2>
+            <p class="tagline">Transformando ideas en experiencias digitales</p>
+            <a href="#projects" class="btn">Ver mis proyectos</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section">
+            <h2 class="section-title">Sobre mí</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/300" alt="Foto de Carlos Aquino" class="profile-img">
+                <div class="bio">
+                    <p>Soy un apasionado desarrollador web con experiencia en HTML, CSS y JavaScript. Me especializo en crear soluciones digitales eficientes y atractivas.</p>
+                    <p>Actualmente estudiante en la Universidad Continental, donde combino conocimientos académicos con proyectos prácticos para desarrollar habilidades técnicas sólidas.</p>
+                    <div class="skills">
+                        <h3>Habilidades técnicas:</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
+                            <li><i class="fas fa-check"></i> JavaScript</li>
+                            <li><i class="fas fa-check"></i> Git & GitHub</li>
+                            <li><i class="fas fa-check"></i> Desarrollo responsive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contáctame</h2>
-            <p><a href="mailto:47139939@continental.edu.pe">47139939@continental.edu.pe</a></p>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Problema sencillo" class="project-img">
+                    <h3>Problema sencillo</h3>
+                    <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
+                    <a href="#" class="project-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Planificar el desarrollo" class="project-img">
+                    <h3>Planificar el desarrollo</h3>
+                    <p>Descripción breve del proyecto y metodologías aplicadas.</p>
+                    <a href="#" class="project-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Integrar herramientas de IA" class="project-img">
+                    <h3>Integrar herramientas de IA</h3>
+                    <p>Proyecto demostrando integración con inteligencia artificial.</p>
+                    <a href="#" class="project-link">Ver más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Contáctame</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:47139939@continental.edu.pe">47139939@continental.edu.pe</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Huancayo, Perú</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar mensaje</button>
+                </form>
+            </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Carlos Adrián Aquino Castillo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
